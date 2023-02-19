@@ -12,6 +12,7 @@ $("#characters-section .character ").on("click",function(){
         $("#selected-character").html(selectedCharacter);
         $(this).removeClass("select");
         $("#available-to-attack-section .enemies").html($(".select"));
+        $("#characters-section .section-title").html("");
         }   
 });
 $(document).on("click","#available-to-attack-section .enemies .character",function(){  
