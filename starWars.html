@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Star Wars with jQuery!</title>
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet" type="text/css">
+		<!-- CSS -->
+		<link rel="stylesheet" href="starwars.css">
+		<!-- jQuery -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+		<!-- Game Logic -->
+		<script defer type="text/javascript" src="starwars.js"></script>
+	</head>
+
+	<body>
+
+		<div class="main-section-title">Star Wars RPG!</div>
+		<div id="main-game-section">
+			<!-- Where the characters are initially available to be selected. -->
+			<div id="characters-section">
+				<div class="section-title">Select Your Character</div>
+
+				<div class="select character obi-wan">
+					<div class="character-name">Obi-Wan Kenobi</div>
+					<img class="character-image" src="C:\Users\Hp\Documents\IATC\Images\obi-wan.jpg"/>
+					<div class="character-health">120</div>
+				</div>
+
+				<div class="select character darth-sidious">
+					<div class="character-name">Darth Maul</div>
+					<img class="character-image" src="C:\Users\Hp\Documents\IATC\Images\darth-sidious.png"/>
+					<div class="character-health">120</div>
+				</div>
+
+		
+				<div class="select character luke-skywalker">
+					<div class="character-name">Luke Skywalker</div>
+					<img class="character-image" src="C:\Users\Hp\Documents\IATC\Images\luke-skywalker.jpg"/>
+					<div class="character-health">120</div>
+				</div>
+
+				<div class="select character darth-maul">
+					<div class="character-name">Darth Maul</div>
+					<img class="character-image" src="C:\Users\Hp\Documents\IATC\Images\darth-maul.jpg"/>
+					<div class="character-health">120</div>
+				</div>
+
+			</div>
+			
+			<!-- Section for our selected character. -->
+			<div id="selected-character-section">
+				<div class="section-title">Your Character</div>
+				<!-- Where our selected character will appear. -->
+				<div id="selected-character"></div>
+			</div>
+
+			<!-- Where our enemies available to attack will appear. -->
+			<div id="available-to-attack-section">
+				<div class="section-title">Enemies Available To Attack</div>
+				<div class="enemies"></div>
+			</div>
+
+			<div class="section-title">Fight Section</div>
+			<div id="fight-section">
+				<button id="attack-button">Attack</button>
+			</div>
+
+			<div id="action">
+				<div class="character-section">
+					<div class="section-title">Defender</div>
+					<!-- Where our defender will appear. -->
+					<div id="defender"></div>
+				</div>
+			</div>
+
+		</div>
+		<!-- Area for game messages. -->
+		<div id="game-message">
+		
+		</div>
+	</body>
+
+</html>
