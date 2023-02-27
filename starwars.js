@@ -42,8 +42,8 @@ $("#attack-button").on("click",function(){
             var restart = document.createTextNode("Restart");
             newBtn.append(restart);
             $("#game-message").append(newBtn)
-            $("#selected-character").empty();
-            $("#available-to-attack-section .enemies").empty();
+            $("#selected-character-section").empty();
+            $("#available-to-attack-section").empty();
         }else 
         {
             if(count<3){
